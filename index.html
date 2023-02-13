@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculadora</title>
+</head>
+
+<body>
+    
+<main class="container">
+    <h3>    
+        divi
+        <br>
+        sor
+    </h3>
+    <div class="card">
+        <div class="lado-esquerdo">
+            <div class="input-group">
+                <label for="conta" class="conta">Conta</label>
+                <img src="./images/icon-dollar.svg" alt="Icone do Dollar" class="imagem-conta">
+                <input type="conta" type="number"   class="input"   placeholder="0" min="0" onfocus="this.value=''">
+                <div class="mensagem">
+
+                </div>
+            <div class="input-group"> 
+                <label class="label" for="">
+                    Selecionar %
+                </label>
+                <div class="tips">
+                    <div class="tip">
+                        <input type="radio" class="input-tip" value="0.05" name="tip" id="5%">
+                        <label for="5%">5%</label>
+                      </div>
+
+                      <div class="tip">
+                        <input type="radio" class="input-tip" value="0.10" name="tip" id="10%">
+                        <label for="10%">10%</label>
+                      </div>
+
+                      <div class="tip">
+                        <input type="radio" class="input-tip" value="0.15" name="tip" id="15%">
+                        <label for="15%">15%</label>
+                      </div>
+
+                      <div class="tip">
+                        <input type="radio" class="input-tip" value="0.25" name="tip" id="25%">
+                        <label for="25%">25%</label>
+                      </div>
+
+                      <div class="tip">
+                        <input type="radio" class="input-tip" value="0.50" name="tip" id="50%">
+                        <label for="50%">50%</label>
+                      </div>
+                      <input type="number"  class="input-custom"    placeholder="custom"    name="tip"  id="custom" >
+                </div>   
+            <div class="input-group">
+                <label for="ppl" class="label">Numero de pessoas</label>
+                <img src="./images/icon-person.svg" alt="Icone de Pessoas" class="imagem-pessoas">
+                <input type="ppl" type="number" class="input" placeholder="1"   value="1"   min="0" onfocus="this.value=''">
+                <div class="mensagem">
+
+                </div>
+            </div>
+        <div class="lado-direito">
+            <div>
+                <div class="resultado">
+                    <label for="">Valor
+                        <br>
+                        <span>/  pessoas</span>
+                    </label>
+                    <p>
+                        $
+                        <span id="valor">0.00</span>
+                        </p>
+                <div class="resultado">
+                    <label for="">Total
+                        <br>
+                        <span>/  pessoas</span>
+                    </label>
+                    <p>
+                        $
+                        <span id="total">0.00</span>
+                    </p>
+                </div>        
+                </div>
+                <button class="botao-reset">Reset</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+</main>
+<script src="main.js">
+
+</script>
+</body>
+
+</html>

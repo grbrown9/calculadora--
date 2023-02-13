@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+html {
+    display: block;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin: 8rem 0.5rem;
+    color: hsl(186, 14%, 43%);
+}
+
+h3 {
+    color: hsl(185, 19%, 25%);
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgb(0, 0, 0 / 10%), 0 2px 4px -2px rgb(0 , 0, 0 / 10%)  ;
+}
+
+.lado-esquerdo {
+    margin-right: 2rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.input-group .label {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.input-group .imagem-conta {
+    position: absolute;
+    width: 11px;
+    height: 17px;
+    top: 2.6rem;
+    left: 1rem;
+}
+
+.input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: hsl(183, 100%, 15%);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    row-gap: 1.2rem;
+    column-gap: 1rem;
+}
+
+.tip {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-group .input-custom {
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.2rem;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.input-group:last-child {
+    margin-bottom: 0.8rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group .imagem-pessoas {
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    top: 2.6rem;
+    left: 1rem;
+}
+
+.input-group .mensagem {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+}
+
+.lado-direito {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.9rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lado-direito .resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.lado-direito .resultado label {
+    max-width: 100px;
+    color: #fff;
+}
+
+.lado-direito .resultado span {
+    font-size: 0.8rem;
+    color: hsl(186, 14%, 43%);
+}
+
+.lado-direito .resultado p {
+    font-size: 2.2rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.lado-direito .resultado p>span {
+    font-size: 2.2rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.botao-reset {
+    background-color: hsl(172, 67%, 45%);
+    padding: 0.4rem 0;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
